@@ -10,7 +10,8 @@ public class Lista2 {
 		//exercicio6();
 		//exercicio7();
 		//exercicio8();
-		exercicio9();
+		//exercicio9();
+		exercicio10();
 	}
 	// Nível Básico: 
 	static void exercicio1() {
@@ -143,6 +144,23 @@ public class Lista2 {
 			System.out.println("Isoceles");
 		} else {
 			System.out.println("Escaleno");
+		}
+	}
+	static void exercicio10() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Usuario: ");
+		String usuario1 = sc.nextLine();
+		System.out.println("Senha: ");
+		String senha1 = sc.nextLine();
+		
+		String usuario = "Lucas";
+		String senha = "1611";
+		
+		if (usuario1.equals(usuario) && senha1.equals(senha)) {
+			System.out.println("Acesso permitido");
+		} else {
+			System.out.println("Acesso negado");
 		}
 	}
 }
