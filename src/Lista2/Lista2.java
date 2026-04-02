@@ -4,7 +4,9 @@ public class Lista2 {
 	public static void main(String[] args) {
 		//exercicio1();
 		//exercicio2();
-		exercicio3();
+		//exercicio3();
+		//exercicio4();
+		exercicio5();
 	}
 	static void exercicio1() {
 		Scanner sc = new Scanner(System.in);
@@ -43,6 +45,30 @@ public class Lista2 {
 			System.out.println("Negativo");
 		} else {
 			System.out.println("Igual a 0");
+		}
+	}
+	static void exercicio4() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Nota: ");
+		int x = sc.nextInt();
+		
+		if (x >= 6) {
+			System.out.println("Aprovado");
+		} else {
+			System.out.println("Reprovado");
+		}
+	}
+	static void exercicio5() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Idade: ");
+		int x = sc.nextInt();
+		
+		if (x >= 16) {
+			System.out.println("Pode votar");
+		} else {
+			System.out.println("Nao pode votar");
 		}
 	}
 }
