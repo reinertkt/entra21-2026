@@ -6,8 +6,10 @@ public class Lista2 {
 		//exercicio2();
 		//exercicio3();
 		//exercicio4();
-		exercicio5();
+		//exercicio5();
+		exercicio6();
 	}
+	// Nível Básico: 
 	static void exercicio1() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Informe um numero: ");
@@ -69,6 +71,25 @@ public class Lista2 {
 			System.out.println("Pode votar");
 		} else {
 			System.out.println("Nao pode votar");
+		}
+	}
+	// Nível Intermediário: 
+	static void exercicio6() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Numero 1: ");
+		int x = sc.nextInt();
+		System.out.println("Numero 2: ");
+		int y = sc.nextInt();
+		System.out.println("Numero 3: ");
+		int z = sc.nextInt();
+		
+		if (x > y && x > z) {
+			System.out.println("O numero 1 é o maior");
+		} else if ( x < y && y > z) {
+			System.out.println("O numero 2 é o maior");
+		} else {
+			System.out.println("O numero 3 é o maior");
 		}
 	}
 }
