@@ -9,7 +9,8 @@ public class Lista2 {
 		//exercicio5();
 		//exercicio6();
 		//exercicio7();
-		exercicio8();
+		//exercicio8();
+		exercicio9();
 	}
 	// Nível Básico: 
 	static void exercicio1() {
@@ -124,6 +125,24 @@ public class Lista2 {
 			System.out.println("Forma um triangulo");
 		} else {
 			System.out.println("Nao forma um triangulo");
+		}
+	}
+	static void exercicio9() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Lado 1: ");
+		int x = sc.nextInt();
+		System.out.println("Lado 2: ");
+		int y = sc.nextInt();
+		System.out.println("Lado 3: ");
+		int z = sc.nextInt();
+		
+		if (x == y && x == z) {
+			System.out.println("Equilatero");
+		} else if (x == y && x != z) {
+			System.out.println("Isoceles");
+		} else {
+			System.out.println("Escaleno");
 		}
 	}
 }
