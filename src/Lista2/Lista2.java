@@ -12,7 +12,8 @@ public class Lista2 {
 		//exercicio8();
 		//exercicio9();
 		//exercicio10();
-		exercicio11();
+		//exercicio11();
+		exercicio12();
 	}
 	// Nível Básico: 
 	static void exercicio1() {
@@ -175,6 +176,26 @@ public class Lista2 {
 			System.out.println("Ano bissexto");
 		} else {
 			System.out.println("Ano não é bissexto");
+		}
+	}
+	static void exercicio12() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Numero 1: ");
+		int x = sc.nextInt();
+		System.out.println("Numero 2: ");
+		int y = sc.nextInt();
+		System.out.println("Operação: ");
+		char z = sc.next().charAt(0);
+		
+		if (z == '+') {
+			System.out.println(x + y);
+		} else if (z == '-') {
+			System.out.println(x - y);
+		} else if (z == '*') {
+			System.out.println(x * y);
+		} else if (z == '/') {
+			System.out.println(x / y);
 		}
 	}
 }
