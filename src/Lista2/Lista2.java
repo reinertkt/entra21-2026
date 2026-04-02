@@ -8,7 +8,8 @@ public class Lista2 {
 		//exercicio4();
 		//exercicio5();
 		//exercicio6();
-		exercicio7();
+		//exercicio7();
+		exercicio8();
 	}
 	// Nível Básico: 
 	static void exercicio1() {
@@ -107,6 +108,22 @@ public class Lista2 {
 			System.out.println("Bom");
 		} else {
 			System.out.println("Excelente");
+		}
+	}
+	static void exercicio8() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Lado 1: ");
+		int x = sc.nextInt();
+		System.out.println("Lado 2: ");
+		int y = sc.nextInt();
+		System.out.println("Lado 3: ");
+		int z = sc.nextInt();
+		
+		if (x + y > z && x + z > y && y + z > x) {
+			System.out.println("Forma um triangulo");
+		} else {
+			System.out.println("Nao forma um triangulo");
 		}
 	}
 }
