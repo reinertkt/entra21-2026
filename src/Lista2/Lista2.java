@@ -16,7 +16,8 @@ public class Lista2 {
 		//exercicio12();
 		//exercicio13();
 		//exercicio14();
-		exercicio15();
+		//exercicio15();
+		exercicio16();
 	}
 	// Nível Básico: 
 	static void exercicio1() {
@@ -254,6 +255,28 @@ public class Lista2 {
 			System.out.println("Você é um Adulto");
 		} else {
 			System.out.println("Voce é um Idoso");
+		}
+	}
+	// Nível Desafio:
+	static void exercicio16() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Nota 1: ");
+		double x = sc.nextDouble();
+		System.out.println("Nota 2: ");
+		double y = sc.nextDouble();
+		System.out.println("Nota 3; ");
+		double z = sc.nextDouble();
+		
+		double media = ((x + y + z)/3);
+		System.out.println("Média: " + media);
+		
+		if (media <= 5) {
+			System.out.println("Você foi Reprovado");
+		} else if (media <= 6.9) {
+			System.out.println("Você esta de Recuperação");
+		} else {
+			System.out.println("Você foi Aprovado!");
 		}
 	}
 }
