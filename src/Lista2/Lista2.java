@@ -13,6 +13,7 @@ public class Lista2 {
 		//exercicio9();
 		//exercicio10();
 		//exercicio11();
+<<<<<<< HEAD
 		//exercicio12();
 		//exercicio13();
 		//exercicio14();
