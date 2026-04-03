@@ -348,7 +348,7 @@ public class Lista2 {
 			  String senha1 = sc.nextLine();
 			  
 			  if (usuario1.equals(usuario) && senha1.equals(senha)) {
-				  System.out.println("Permitido");
+				  System.out.println("Acesso autorizado!");
 				  return;
 			  } else {
 				  tentativas ++;
