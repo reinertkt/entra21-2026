@@ -21,7 +21,7 @@ public class Lista2 {
 		//exercicio17();
 		//exercicio18();
 		//exercicio19();
-		exercicio20();
+		//exercicio20();
 	}
 	// Nível Básico: 
 	static void exercicio1() {
@@ -33,6 +33,7 @@ public class Lista2 {
 		} else {
 			System.out.println("O numero é impar");
 		}
+		sc.close();
 	}
 	static void exercicio2() {
 		Scanner sc = new Scanner(System.in);
@@ -48,6 +49,7 @@ public class Lista2 {
 		} else {
 			System.out.println(y + " é maior");
 		}
+		sc.close();
 	}
 	static void exercicio3() {
 		Scanner sc = new Scanner(System.in);
@@ -62,6 +64,7 @@ public class Lista2 {
 		} else {
 			System.out.println("Igual a 0");
 		}
+		sc.close();
 	}
 	static void exercicio4() {
 		Scanner sc = new Scanner(System.in);
@@ -74,6 +77,7 @@ public class Lista2 {
 		} else {
 			System.out.println("Reprovado");
 		}
+		sc.close();
 	}
 	static void exercicio5() {
 		Scanner sc = new Scanner(System.in);
@@ -86,6 +90,7 @@ public class Lista2 {
 		} else {
 			System.out.println("Nao pode votar");
 		}
+		sc.close();
 	}
 	// Nível Intermediário: 
 	static void exercicio6() {
@@ -105,6 +110,7 @@ public class Lista2 {
 		} else {
 			System.out.println("O numero 3 é o maior");
 		}
+		sc.close();
 	}
 	static void exercicio7() {
 		Scanner sc = new Scanner(System.in);
@@ -121,6 +127,7 @@ public class Lista2 {
 		} else {
 			System.out.println("Excelente");
 		}
+		sc.close();
 	}
 	static void exercicio8() {
 		Scanner sc = new Scanner(System.in);
@@ -137,6 +144,7 @@ public class Lista2 {
 		} else {
 			System.out.println("Nao forma um triangulo");
 		}
+		sc.close();
 	}
 	static void exercicio9() {
 		Scanner sc = new Scanner(System.in);
@@ -155,6 +163,7 @@ public class Lista2 {
 		} else {
 			System.out.println("Escaleno");
 		}
+		sc.close();
 	}
 	static void exercicio10() {
 		Scanner sc = new Scanner(System.in);
@@ -172,6 +181,7 @@ public class Lista2 {
 		} else {
 			System.out.println("Acesso negado");
 		}
+		sc.close();
 	}
 	// Nível Avançado:
 	static void exercicio11() {
@@ -185,6 +195,7 @@ public class Lista2 {
 		} else {
 			System.out.println("Ano não é bissexto");
 		}
+		sc.close();
 	}
 	static void exercicio12() {
 		Scanner sc = new Scanner(System.in);
@@ -205,6 +216,7 @@ public class Lista2 {
 		} else if (z == '/') {
 			System.out.println(x / y);
 		}
+		sc.close();
 	}
 	static void exercicio13() {
 		Scanner sc = new Scanner(System.in);
@@ -226,6 +238,8 @@ public class Lista2 {
 		
 		System.out.println("Imposto R$: " + imposto);
 		System.out.println("Salario liquido: " + salarioLiquido);
+		
+		sc.close();
 	}
 	static void exercicio14() {
 		Scanner sc = new Scanner(System.in);
@@ -244,6 +258,8 @@ public class Lista2 {
 		
 		double valorDesconto = (valor - desconto);
 		System.out.println("O valor com desconto = " + valorDesconto);
+		
+		sc.close();
 	}
 	static void exercicio15() {
 		Scanner sc = new Scanner(System.in);
@@ -260,6 +276,7 @@ public class Lista2 {
 		} else {
 			System.out.println("Voce é um Idoso");
 		}
+		sc.close();
 	}
 	// Nível Desafio:
 	static void exercicio16() {
@@ -282,6 +299,7 @@ public class Lista2 {
 		} else {
 			System.out.println("Você foi Aprovado!");
 		}
+		sc.close();
 	}
 	static void exercicio17() {
 		Scanner sc = new Scanner(System.in);
@@ -297,6 +315,7 @@ public class Lista2 {
 		} else {
 			System.out.println("Negado");
 		}
+		sc.close();
 	}
 	static void exercicio18() {
 		Scanner sc = new Scanner(System.in);
@@ -305,13 +324,14 @@ public class Lista2 {
 		System.out.println("Adivinhe o numero:");
 		int resposta = sc.nextInt();
 		
-		if (resposta < 8) {
+		if (resposta < numero) {
 			System.out.println("Menor");
-		} else if (resposta > 8) {
+		} else if (resposta > numero) {
 			System.out.println("Maior");
 		} else {
 			System.out.println("Acertou");
 		}
+		sc.close();
 	}
 	static void exercicio19() {
 		Scanner sc = new Scanner(System.in);
@@ -333,6 +353,7 @@ public class Lista2 {
 		} else {
 			System.out.println("Obesidade");
 		}
+		sc.close();
 	}
 	static void exercicio20() {
 		  Scanner sc = new Scanner(System.in);
@@ -354,8 +375,8 @@ public class Lista2 {
 				  tentativas ++;
 				  System.out.println("Negado, tentativas restantes: " + (3 - tentativas));
 			  }
+			  sc.close();
 		  }
-		  System.out.println(" ");
 		  System.out.println("Acesso bloqueado. Muitas tentativas");
 	}
 }
