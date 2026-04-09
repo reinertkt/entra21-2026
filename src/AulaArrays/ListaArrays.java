@@ -4,7 +4,8 @@ public class ListaArrays {
 	public static void main(String[] args) {
 		//exercicio1();
 		//exercicio2();
-		exercicio3();
+		//exercicio3();
+		exercicio4();
 	}
 	static void exercicio1() {
 		Scanner sc = new Scanner(System.in);
@@ -63,4 +64,28 @@ public class ListaArrays {
 		}
 		sc.close();
 	}
-}
+	static void exercicio4() {
+		Scanner sc = new Scanner(System.in);
+		
+		int[] numeros = new int[15];
+		for(int i = 0; i < numeros.length; i++) {
+			System.out.println("Informe um número: ");
+			numeros[i] = sc.nextInt();
+		}
+		int maior = numeros[0];
+		for(int i = 1; i < numeros.length; i++) {
+			if (numeros[i] > maior) {
+				maior = numeros[i];
+			}
+		}
+		System.out.println("\nMaior número: " + maior);
+		
+		for(int i = 0; i < numeros.length; i++) {
+			int i1 = (i + 1);
+			if (numeros[i] == maior) {
+				System.out.println("Posição: " + i1);
+			}
+		}
+		sc.close();
+	}
+}	
