@@ -6,7 +6,8 @@ public class ListaArrays {
 		//exercicio2();
 		//exercicio3();
 		//exercicio4();
-		exercicio5();
+		//exercicio5();
+		exercicio6();
 	}
 	static void exercicio1() {
 		Scanner sc = new Scanner(System.in);
@@ -98,7 +99,7 @@ public class ListaArrays {
 		for (int i = 0; i < numeros.length; i++) {
 			System.out.print("Digite um número: ");
 			numeros[i] = sc.nextInt();
-    }
+		}
 		for (int i = 0; i < numeros.length - 1; i++) {
 			for (int j = i + 1; j < numeros.length; j++) {
 
@@ -106,14 +107,37 @@ public class ListaArrays {
 					int aux = numeros[i];
 					numeros[i] = numeros[j];
 					numeros[j] = aux;
-            }
-        }
-    }
-    System.out.println("\nVetor ordenado:");
-    for (int i = 0; i < numeros.length; i++) {
-        System.out.println(numeros[i]);
-    }
-    sc.close();
-}
-
+				}
+			}
+		}
+		System.out.println("\nVetor ordenado:");
+		for (int i = 0; i < numeros.length; i++) {
+			System.out.println(numeros[i]);
+		}
+		sc.close();
+	}
+	static void exercicio6() {
+		Scanner sc = new Scanner(System.in);
+		
+		int[] numeros = new int[10];
+		int soma = 0;
+		
+		for(int i = 0; i < numeros.length; i++) {
+			System.out.println("Digite um número: ");
+			numeros[i] = sc.nextInt();
+			soma += numeros[i];
+		}
+		double media = (soma / 10.0);
+		
+		System.out.println("\nMédia: " + media);
+		System.out.println("\nNúmeros acima da média: ");
+		
+		
+		for(int i = 0; i < numeros.length; i++) {
+			if (numeros[i] > media) {
+				System.out.println(numeros[i]);
+			}
+		}
+		sc.close();
+	}
 }	
