@@ -5,7 +5,8 @@ public class ListaArrays {
 		//exercicio1();
 		//exercicio2();
 		//exercicio3();
-		exercicio4();
+		//exercicio4();
+		exercicio5();
 	}
 	static void exercicio1() {
 		Scanner sc = new Scanner(System.in);
@@ -88,4 +89,31 @@ public class ListaArrays {
 		}
 		sc.close();
 	}
+	static void exercicio5() {
+		Scanner sc = new Scanner(System.in);
+
+		int[] numeros = new int[8];
+
+
+		for (int i = 0; i < numeros.length; i++) {
+			System.out.print("Digite um número: ");
+			numeros[i] = sc.nextInt();
+    }
+		for (int i = 0; i < numeros.length - 1; i++) {
+			for (int j = i + 1; j < numeros.length; j++) {
+
+				if (numeros[i] > numeros[j]) {
+					int aux = numeros[i];
+					numeros[i] = numeros[j];
+					numeros[j] = aux;
+            }
+        }
+    }
+    System.out.println("\nVetor ordenado:");
+    for (int i = 0; i < numeros.length; i++) {
+        System.out.println(numeros[i]);
+    }
+    sc.close();
+}
+
 }	
